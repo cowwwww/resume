@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Qianhui Cao's Resume</title>
+</head>
+
+<style>
+html, body {
+    font-family: 'Garamond', serif;
+    color: #333;
+    background-color: #dedede;
+}
+
+.resume {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px 40px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.body .left-column {
+    flex: 0 0 30%; /* Adjusted width */
+    text-align: left;
+    padding-left: 10px;
+}
+
+.body .middle-column {
+    flex: 1; /* This will make the middle-column take up the remaining space */
+    text-align: center;
+    font-size: 30px;
+}
+
+.body .right-column {
+    flex: 0 0 30%; /* Adjusted width */
+    text-align: right;
+    padding-right: 20px;
+}
+
+
+h1 {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+h3 {
+    font-size: 20px;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 4px;
+    margin-bottom: 15px;
+}
+h4 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h5 {
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+}
+h6 {
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+h7 {
+    color: #000000;
+    font-size: 14px;
+}
+
+
+
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.nav-buttons button {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;  /* Slightly larger font for nav buttons */
+    font-weight: bold;
+    padding: 12px 25px;  /* Larger padding for nav buttons */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0 10px;
+    margin-right: 40px;
+}
+
+
+
+
+
+.alignment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.left, .middle, .right {
+    display: inline-block;
+}
+
+.middle {
+    flex: 1;
+    text-align: center;
+}
+
+
+ul {
+    list-style-type: none;   /* Remove default bullets */
+    padding-left: 10px;      /* Add space between the bullet and the text */
+    margin: 10px 0;          /* Add top and bottom margin for spacing */
+    font-size: 16px;         /* Adjust the font size */
+    color: #333;             /* Text color */
+    line-height: 1.6;        /* Set line height for readability */
+}
+
+ul li {
+    position: relative;
+    padding-left: 15px;      /* Make room for the smaller bullet */
+    font-size: 14px;
+}
+
+ul li::before {
+    content: '•';            /* Use a custom bullet point */
+    font-size: 10px;         /* Make the bullet smaller */
+    position: absolute;
+    left: 0;                 /* Position the bullet on the left */
+    top: 50%;                /* Vertically center the bullet */
+    transform: translateY(-50%);
+}
+
+</style>
+<body>
+    <div class="nav-buttons">
+        <button id="lang-toggle" onclick="toggleLanguage()">Switch to Chinese</button>
+        <button onclick="showSection('full')">Full CV</button>
+        <button onclick="showSection('law')">Law</button>
+        <button onclick="showSection('engineering')">Engineering</button>
+    </div>
+
+
+
+    <!-- Resume Content Sections -->
+    <div class="resume">
+        <!-- Full CV Section -->
+        <div id="full" class="section">
+            <h1>Qianhui Cao</h1>
+            <h7>Beijing, Guangzhou, Bay of Plenty, Sydney Email: caoqianhui09@gmail.com  Phone: 0435311327</h7>
+            
+            <h3>Education</h3>
+
+            <p class="alignment">
+                <span class="left">2024.02 - Present</span>
+                <span class="middle">University of Sydney</span>
+                <span class="right">Sydney, Australia</span>
+            </p>
+
+            <h7><b>Bachelor of Laws and Bachelor of Engineering with Honors (Mechatronics)</h7></b>
+            
+            <p><h7><b>Law Courses:</b> Foundation of Law, Contracts, Administrative Law, Public International Law, Corporations Law, Civil and Criminal Procedure, Criminal Law, International Commercial Arbitration</h7></p>
+            <p><h7><b>Engineering Courses:</b> Mechatronic Systems Design, Engineering Control Systems, Robotics, Advanced Mathematics, Electrical Engineering, Power Electronics, Thermofluids, Mechanics of Solids, Engineering Materials</h7></p>
+
+
+            <p class="alignment">
+                <span class="left">2020.01 – 2023.12</span>
+                <span class="middle">Bethlehem College</span>
+                <span class="right">Bay of Plenty, New Zealand</span>
+            </p>
+            <h7><b>Courses:</b> Mathematics, Physics, Chemistry, Economics, Computer Science, English Literature</h7>
+
+            <h3>Experience</h3>
+            <p class="alignment">
+                <span class="left">2024.10 - Present</span>
+                <span class="middle">Leading Capital Group</span>
+                <span class="right">Sydney, Australia</span>
+            </p>
+            <h7><b>Investment Consultant</h7></b>
+
+
+            <p class="alignment">
+                <span class="left">2024.10 - Present</span>
+                <span class="middle">Ou Yang & Lee Law</span>
+                <span class="right">Sydney, Australia</span>
+            </p>
+
+            <p class="alignment">
+                <span class="left">2024.06 – 2024.08</span>
+                <span class="middle">Film Crew of "扫毒风暴"</span>
+                <span class="right">Guangdong, China</span>
+            </p>
+            <h7><b>Camera and Photography Assistant</b></h7>
+            <ul>
+                <li>Assisted in camera operations, lighting setups, and photographic composition for key scenes. </li>
+                <li>Supported the cinematography team in achieving desired visual effects</li>
+            </ul>
+
+
+
+            <p class="alignment">
+                <span class="left">2022.05 – 2024.08</span>
+                <span class="middle">ADA Debate Academy</span>
+                <span class="right">China and New Zealand</span>
+            </p>
+            <h7><b>Co-founder</b></h7>
+            <ul>
+                <li>Co-founded the ADA Debate Academy, organizing over 20 online tournaments.</li>
+                <li>Led initiatives to promote debate culture across multiple regions.</li>
+            </ul>
+
+
+            <p class="alignment">
+                <span class="left">2021.05 – 2023.12</span>
+                <span class="middle">ArcX Limited</span>
+                <span class="right">Bay of Plenty, New Zealand</span>
+            </p>
+            <h7><b>Founder and Coach</b></h7>
+            <ul>
+                <li>Founded and coached for badminton at ArcX Limited, mentoring over 250 students.</li>
+                <li>The company became an official partner of the Bay of Plenty badminton team, providing coaching and development support.</li>
+            </ul>
+
+            <p class="alignment">
+                <span class="left">2022.11 – 2023.02</span>
+                <span class="middle">Film Crew of "拨云见日"</span>
+                <span class="right">Yunnan, China</span>
+            </p>
+            <h7><b>Production Department</b></h7>
+            <ul>
+                <li>Participated in contract negotiations and managed financial reporting for the production.</li>
+                <li>Coordinated logistics for on-location shoots, ensuring all equipment and crew were in place.</li>
+                <li>Assisted in securing filming permits and liaised with local authorities to facilitate smooth operations.</li>
+                <li>Contributed to the creation of the shooting schedule, optimizing time and resources.</li>
+            </ul>
+
+            <p class="alignment">
+                <span class="left">2021.11 – 2022.02</span>
+                <span class="middle">Film Crew of "扫黑永不放弃"</span>
+                <span class="right">Yunnan, China</span>
+            </p>
+            <h7><b>Production Department</b></h7>
+            <ul>
+                <li>Involved in partnership discussions and handled financial statements for the production team.</li>
+                <li>Managed daily production schedules, ensuring all departments met deadlines.</li>
+                <li>Coordinated transportation and accommodations for cast and crew during the shoot.</li>
+                <li>Worked closely with the director to adjust plans based on real-time challenges during filming.</li>
+            </ul>
+            
+            <h3>Profile</h3>
+            <h7><b>Professional Skills</b></h7>
+            <ul>
+                <li>Photography, Poster Design, Video Editing, Content Writing</li>
+                <li>Social Media Management (WeChat, Instagram), Microsoft Office Suite</li>
+                <li>AutoCAD, SolidWorks, MATLAB, LaTeX, Adobe Photoshop, Premiere Pro, Illustrator</li>
+                <li>HTML, Python, PHP, CSS, C, R</li>
+                <li>Project Management (Asana, Trello), Time Management</li>
+            </ul>
+            <h7><b>Language</b></h7>
+            <ul>
+            <li><h7>Native of Guangzhou, fluent in Cantonese and Mandarin</h7></li>
+            <li><h7>Over seven years in New Zealand, fluent in English with strong reading and writing skills</h7></li>
+            </ul>
+        </div>
+
+        <h3>Sports Experience</h3>
+        <h7><b>Badminton</b></h7>
+        <ul>
+            <li><b>2024:</b> Member of the University of Sydney Badminton Team</li>
+            <li><b>2018–2023:</b> Six-time Champion of the Bay of Plenty High School Badminton Championships</li>
+            <li><b>2017–2023:</b> Captain of Bay of Plenty and Waikato Regional Teams (Bronze Medalist at the 2022 National U17 Team Championships)</li>
+            <li><b>2020:</b> Member of the New Zealand National Junior Team</li>
+        </ul>
+    
+        <h7><b>Volleyball</b></h7>
+        <ul>
+            <li><b>2020:</b> Member of the School Team, Top 8 at the National High School Volleyball Championship</li>
+        </ul>
+    
+        <h7><b>Table Tennis</b></h7>
+        <ul>
+            <li><b>2018–2019:</b> Member of the Bay of Plenty Provincial and School Teams</li>
+            <li><b>Runner-up:</b> in both Team and Individual events at the National High School Table Tennis Championship</li>
+        </ul>
+    
+        <h7><b>Taekwondo</b></h7>
+        <ul>
+            <li><b>2016:</b> Champion at the National Youth Open Tournament (Guangzhou)</li>
+            <li><b>2013:</b> Champion in both Individual and Mixed Doubles at the Guangdong Province Youth Taekwondo Championship</li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+        <!-- Law Section -->
+        <div id="law" class="section" style="display: none;">
+            <h2>Law Education</h2>
+            <p><b>University of Sydney</b> (2024.02 – 2028.12)</p>
+            <ul>
+                <li>Foundation of Law, Contracts, Administrative Law, Public International Law, Corporations Law</li>
+                <li>Civil and Criminal Procedure, Criminal Law, International Commercial Arbitration</li>
+            </ul>
+        </div>
+
+        <!-- Engineering Section -->
+        <div id="engineering" class="section" style="display: none;">
+            <h2>Engineering Education</h2>
+            <p><b>University of Sydney</b> (2024.02 – 2028.12)</p>
+            <ul>
+                <li>Mechatronic Systems Design, Robotics, Engineering Control Systems, Power Electronics</li>
+                <li>Advanced Mathematics, Electrical Engineering, Thermofluids, Mechanics of Solids</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+    let isChinese = false;
+
+    // Function to toggle language
+    function toggleLanguage() {
+        isChinese = !isChinese;
+        const langButton = document.getElementById('lang-toggle');
+        const sections = document.querySelectorAll('.section');
+    
+        if (isChinese) {
+            langButton.textContent = "Switch to English";
+            sections.forEach(section => {
+                section.querySelector('h2').textContent = section.querySelector('h2').textContent.replace('Education', '教育');
+                section.querySelector('p').textContent = section.querySelector('p').textContent.replace('University of Sydney', '悉尼大学');
+            });
+        } else {
+            langButton.textContent = "Switch to Chinese";
+            sections.forEach(section => {
+                section.querySelector('h2').textContent = section.querySelector('h2').textContent.replace('教育', 'Education');
+                section.querySelector('p').textContent = section.querySelector('p').textContent.replace('悉尼大学', 'University of Sydney');
+            });
+        }
+    }
+    
+    // Function to show specific section
+    function showSection(section) {
+        document.querySelectorAll('.section').forEach(el => el.style.display = 'none');
+        document.getElementById(section).style.display = 'block';
+    }
+
+</script>
